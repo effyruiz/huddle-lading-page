@@ -24,24 +24,19 @@ body {
     width: 100%;
     height: auto;
     background-image: url(bg-mobile.svg);
-    object-fit: cover;
+    background-size: cover;
     padding: 1rem;
 }
 
-.main-title img {
-    max-width: 100%;
-    width: 150px;
-    height: auto;
-    object-fit: cover;
-    padding-left: 0;
-    padding-bottom: 2rem;
+.logo {
+    max-width: 150px;
+    background-size: cover;
     margin-bottom: 2rem;
 }
 
-.header-mockup img {
-    width: 100%;
-    height:auto;
-    object-fit: cover;
+.header-mockup  {
+    max-width: 300px;    
+    background-size: cover;
 }
 
 .description {
@@ -49,12 +44,11 @@ body {
     display: flex;
     flex-flow: column;
     text-align: center;
-    padding: 1rem;
 }
 
 .description h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .description p {
@@ -63,24 +57,30 @@ body {
 }
 
 button {
-    padding: 1rem 7rem;
+    padding: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    color:#674baf;
     background-color: #ffff;
     border-radius: 40px;
     border-style: none;
     text-align: center;
+    margin-top: 1rem;
+    -webkit-box-shadow: 10px 32px 43px 4px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 32px 43px 4px rgba(0,0,0,0.29);
+    box-shadow: 10px 32px 43px 4px rgba(0,0,0,0.29);
   
 }
 
+.footer {
+    
+}
 
 
 /* When the browser is at least 425px and above */
 @media screen and (min-width: 425px) {
 
     body {
-        height: 100vh;
-        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -90,5 +90,23 @@ button {
         display: flex;
         flex-flow: row;     
     }
+
+   
+    .header-mockup  {
+        max-width: 600px;    
+        margin-top: 3rem;
+       
+    }
+
+    .description {
+        text-align:left;
+        padding-left: 1rem;
+        margin-right: 3rem;
+    }
+
+    .description h1 {
+        font-size:2rem;
+    }
+
 }
 
